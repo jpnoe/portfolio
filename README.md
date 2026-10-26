@@ -7,6 +7,8 @@ Personal portfolio built with React, TypeScript, and Vite. It presents case stud
 - **[ORBIT](https://github.com/jpnoe/orbit)**: an Android app for longitudinal behavioral logging and state-space analysis.
 - **[WHORL](https://github.com/jpnoe/whorl)**: a Hall-sensor fidget spinner used as a MIDI controller.
 
+The site also documents the collaborative AI workflow, verification practices, and project-level attribution used across the independent work.
+
 ## Run locally
 
 Requires Node 22.12 or newer.
@@ -38,5 +40,6 @@ All targets output to `dist`. The GitHub workflow runs tests and builds on pull 
 ## Project layout
 
 - `src/content/projects.ts`: case study content.
+- `src/pages/ResearchPracticePage.tsx`: collaborative research, verification, and attribution practice.
 - `src/shell/route-data.json`: routes shared by navigation and static page generation.
 - `public/resume.docx`: résumé.
