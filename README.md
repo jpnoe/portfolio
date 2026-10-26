@@ -31,7 +31,6 @@ The build type-checks the app and emits an HTML entry point for every route, so 
 
 | Target | Build command | Base path |
 | --- | --- | --- |
-| Cloudflare Pages | `npm run build` | `/` |
 | GitHub project Pages | `npm run build:github` | repository name, selected automatically in CI |
 | GitHub user Pages or custom domain | `VITE_BASE_PATH=/ npm run build:github` | `/` |
 
