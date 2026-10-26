@@ -4,6 +4,7 @@ import { HomePage } from "../pages/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { WorkPage } from "../pages/WorkPage";
 import { ProjectPage } from "../pages/ProjectPage";
+import { ResearchPracticePage } from "../pages/ResearchPracticePage";
 import { NavigationProvider, SiteLink, useNavigation } from "./navigation";
 import { navRoutes, type AppRoute } from "./routes";
 
@@ -64,6 +65,8 @@ function PageView({ route }: { route: AppRoute | null }) {
       return <HomePage />;
     case "work":
       return <WorkPage />;
+    case "practice":
+      return <ResearchPracticePage />;
     case "hero":
     case "orbit":
     case "memory":
