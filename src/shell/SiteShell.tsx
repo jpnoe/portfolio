@@ -1,5 +1,4 @@
-import { useEffect, useLayoutEffect, useRef } from "react";
-import { noteShellCommit } from "./shellCommits";
+import { useEffect, useRef } from "react";
 import { HomePage } from "../pages/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { WorkPage } from "../pages/WorkPage";
@@ -11,10 +10,6 @@ import { navRoutes, type AppRoute } from "./routes";
 function ShellFrame() {
   const { route, path } = useNavigation();
   const seenPath = useRef<string | null>(null);
-
-  useLayoutEffect(() => {
-    noteShellCommit();
-  });
 
   useEffect(() => {
     document.title = route

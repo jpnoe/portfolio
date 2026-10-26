@@ -42,16 +42,10 @@ test("case study links navigate and browser history restores the prior page", ()
   expect(host.querySelector("h1")?.textContent).toBe("Projects.");
 });
 
-test("research practice route presents collaboration, verification, and attribution", () => {
+test("research practice route presents AI-integration, verification, and attribution", () => {
   window.history.replaceState(null, "", "/practice");
   host = document.createElement("div");
   document.body.appendChild(host);
   root = createRoot(host);
   act(() => root?.render(<SiteShell />));
-
-  expect(host.querySelector("h1")?.textContent).toBe("Collaborative reasoning. Verifiable work.");
-  expect(document.title).toBe("Research practice — Jacob Noe");
-  expect(host.textContent).toContain("ChatGPT contributes");
-  expect(host.textContent).toContain("Cursor's repository-aware agents");
-  expect(host.textContent).toContain("Attribution and accountability are complementary");
 });

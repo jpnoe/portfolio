@@ -21,7 +21,7 @@ export function ProjectPage({ id }: { id: string }) {
     <section className="case-section"><h2>What I built</h2><ul className="implementation-list">{project.implementation.map(item => <li key={item}>{item}</li>)}</ul></section>
     <div className="case-columns">
       <section><p className="eyebrow">Status</p><p>{project.outcome}</p></section>
-      {project.next && <section><p className="eyebrow">Next step</p><p>{project.next}</p></section>}
+      {project.next && <section><p className="eyebrow">Next project</p><p>{project.next}</p></section>}
     </div>
     <div className="case-end"><SiteLink to="/work" className="text-link">Explore another project</SiteLink><a className="text-link" href={`mailto:jake.p.noe.99@gmail.com?subject=${encodeURIComponent(`Portfolio: ${project.name}`)}`}>Discuss this work ↗</a></div>
   </article>;
