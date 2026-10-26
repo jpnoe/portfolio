@@ -21,9 +21,12 @@ export function ResearchPracticePage() {
           Cursor’s repository-aware agents translate scoped decisions into codebase changes and verification.
           </li>
           <li>
-          Gemini contributes targeted debugging and language review. I integrate and inspect the resulting work, test published claims, and document material contributions at the project level.
+          Gemini contributes targeted debugging and language review.
           </li>
         </ul>
+        <p>
+          I integrate and inspect the resulting work, test published claims, and document material contributions at the project level.
+        </p>
       </section>
     </article>
   );
