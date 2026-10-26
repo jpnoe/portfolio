@@ -1,4 +1,4 @@
-# Jacob Noe — portfolio
+# Jacob "Lyla" Noe — portfolio
 
 Personal portfolio built with React, TypeScript, and Vite. It presents case studies for:
 

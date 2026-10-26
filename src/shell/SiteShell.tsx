@@ -14,7 +14,7 @@ function ShellFrame() {
   useEffect(() => {
     document.title = route
       ? route.documentTitle
-      : "Page not found — Jacob Noe";
+      : "Page not found — Jacob \"Lyla\" Noe";
     if (seenPath.current === null || seenPath.current === path) {
       seenPath.current = path;
       return;
@@ -46,7 +46,7 @@ function ShellFrame() {
           <PageView route={route} />
         </main>
         <footer className="colophon">
-          <div><p>Jacob Noe</p><p>Software engineer · research and production systems</p></div>
+          <div><p>Jacob "Lyla" Noe</p><p>Software engineer · research and production systems</p></div>
           <div className="footer-links"><a href="https://github.com/jpnoe">GitHub ↗</a><a href="mailto:lyla.noe.99@gmail.com">Email ↗</a></div>
         </footer>
       </div>

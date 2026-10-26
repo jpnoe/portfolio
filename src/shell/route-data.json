@@ -1,9 +1,9 @@
 [
-  { "id": "home", "path": "/", "label": "Home", "documentTitle": "Jacob Noe — Software Engineer" },
-  { "id": "work", "path": "/work", "label": "Work", "documentTitle": "Selected work — Jacob Noe" },
-  { "id": "practice", "path": "/practice", "label": "Practice", "documentTitle": "Research practice — Jacob Noe" },
-  { "id": "hero", "path": "/work/hero", "label": "Hero Services", "documentTitle": "Hero Services — Jacob Noe" },
-  { "id": "memory", "path": "/work/memory-harness", "label": "Memory harness", "documentTitle": "Associative memory harness — Jacob Noe" },
-  { "id": "orbit", "path": "/work/orbit", "label": "Orbit", "documentTitle": "Orbit — Jacob Noe" },
-  { "id": "whorl", "path": "/work/whorl", "label": "Whorl", "documentTitle": "Whorl — Jacob Noe" }
+  { "id": "home", "path": "/", "label": "Home", "documentTitle": "Jacob \"Lyla\" Noe — Software Engineer" },
+  { "id": "work", "path": "/work", "label": "Work", "documentTitle": "Selected work — Jacob \"Lyla\" Noe" },
+  { "id": "practice", "path": "/practice", "label": "Practice", "documentTitle": "Research practice — Jacob \"Lyla\" Noe" },
+  { "id": "hero", "path": "/work/hero", "label": "Hero Services", "documentTitle": "Hero Services — Jacob \"Lyla\" Noe" },
+  { "id": "memory", "path": "/work/memory-harness", "label": "Memory harness", "documentTitle": "Associative memory harness — Jacob \"Lyla\" Noe" },
+  { "id": "orbit", "path": "/work/orbit", "label": "Orbit", "documentTitle": "Orbit — Jacob \"Lyla\" Noe" },
+  { "id": "whorl", "path": "/work/whorl", "label": "Whorl", "documentTitle": "Whorl — Jacob \"Lyla\" Noe" }
 ]
