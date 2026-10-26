@@ -37,9 +37,3 @@ The build type-checks the app and emits an HTML entry point for every route, so 
 
 All targets output to `dist`. The GitHub workflow runs tests and builds on pull requests and deploys pushes to `main`.
 
-## Project layout
-
-- `src/content/projects.ts`: case study content.
-- `src/pages/ResearchPracticePage.tsx`: collaborative research, verification, and attribution practice.
-- `src/shell/route-data.json`: routes shared by navigation and static page generation.
-- `public/resume.pdf`: résumé.
