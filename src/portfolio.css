@@ -46,6 +46,7 @@ a { color: inherit; }
 .question-section:last-of-type  { border-bottom: none; }
 .question-section h2 { font-family: var(--serif); font-size: clamp(1.7rem, 3vw, 2.5rem); font-weight: 400; letter-spacing: -.025em; line-height: 1.3; margin: .5rem 0 0; max-width: 48rem; }
 .question-section p:not(.eyebrow) { max-width: 49rem; color: var(--muted); line-height: 1.8; }
+.question-section ul { max-width: 49rem; color: var(--muted); line-height: 1.8; }
 .case-section { margin: .5rem 0; max-width: 52rem; }
 .case-section h2 { font-family: var(--serif); font-size: 1.6rem; font-weight: 400; letter-spacing: -.02em; margin: .3rem 0 .7rem; }
 .case-section p, .case-columns p:not(.eyebrow) { margin: .5rem 0 0; color: var(--muted); line-height: 1.8; }

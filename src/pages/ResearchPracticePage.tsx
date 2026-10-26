@@ -12,19 +12,18 @@ export function ResearchPracticePage() {
         <p className="eyebrow">Human-AI Collaboration</p>
         <p>
           My independent projects are developed through sustained collaboration with multiple AI systems across problem formulation, architecture, implementation, and critical review. Different participants contribute differently: 
-          <br/>
-          <ul>
-            <li>
-            ChatGPT supports formalization and architectural reasoning.
-            </li>
-            <li>
-            Cursor’s repository-aware agents translate scoped decisions into codebase changes and verification.
-            </li>
-            <li>
-            Gemini contributes targeted debugging and language review. I integrate and inspect the resulting work, test published claims, and document material contributions at the project level.
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+          ChatGPT supports formalization and architectural reasoning.
+          </li>
+          <li>
+          Cursor’s repository-aware agents translate scoped decisions into codebase changes and verification.
+          </li>
+          <li>
+          Gemini contributes targeted debugging and language review. I integrate and inspect the resulting work, test published claims, and document material contributions at the project level.
+          </li>
+        </ul>
       </section>
     </article>
   );
