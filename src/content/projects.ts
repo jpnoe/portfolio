@@ -11,82 +11,82 @@ export interface Project {
   contribution: string;
   implementation: string[];
   flow: string[];
-  evidence: string;
-  boundaries: string;
-  next: string;
+  outcome: string;
+  next?: string;
+  repo?: string;
 }
 
 export const projects: readonly Project[] = [
   {
     id: "hero", number: "01", name: "Hero Services", path: "/work/hero",
-    kind: "Production engineering", status: "Production web and mobile platform",
-    summary: "Software for water and wastewater operations: offline field work, live coordination, configurable forms, and deployment pipelines.",
-    stack: ["Python / Flask", "React", "React Native", "PostgreSQL", "Redis", "AWS"],
+    kind: "Production platform", status: "In production · multiple client organizations",
+    summary: "Web and mobile software for water and wastewater operations: offline field data collection, real-time coordination, configurable forms, and reporting.",
+    stack: ["Python / Flask", "React", "React Native / Expo", "Socket.IO", "PostgreSQL", "Redis", "AWS"],
     question: "How do field teams collect operational data and coordinate work when connectivity is unreliable?",
-    contribution: "I joined as a full-stack developer in 2022 and became lead developer in 2025, later assuming sole development responsibility. My work spans web and mobile applications, backend services, synchronization, deployment, and production support.",
+    contribution: "I joined as a full-stack developer in 2022, became lead developer in 2025, and am now the sole developer. I own the web and mobile applications, backend services, data synchronization, deployment, and production support.",
     implementation: [
-      "Offline-first React Native / Expo workflows with durable local storage, network-aware request queues, and synchronization.",
-      "Socket.IO communication between React and Flask, with Redis storing rooms and resource locks to coordinate active clients.",
-      "Dynamic forms generated from checksheet specifications, reporting systems, and custom D3 visualizations.",
-      "Scheduled emails and event-driven notifications for due states, completed checksheets, and configurable out-of-range readings.",
-      "Branch-triggered CodeBuild pipelines with component-specific builds. Lambda releases deploy automatically; frontend and API releases require manual ECS restarts.",
-      "Production authentication updates and a password-hashing migration."
+      "Offline-first React Native / Expo field app with durable local storage, a network-aware request queue, and synchronization.",
+      "Real-time coordination between React and Flask over Socket.IO, with Redis managing rooms and resource locks across active clients.",
+      "Dynamic forms generated from checksheet specifications, plus reporting and custom D3 visualizations.",
+      "Scheduled and event-driven notifications for due work, completed checksheets, and out-of-range readings.",
+      "CI/CD on AWS CodeBuild, Lambda, and ECS, and production authentication and security upgrades."
     ],
     flow: ["Field and web clients", "Flask + Socket.IO", "PostgreSQL + Redis", "Reports + notifications"],
-    evidence: "Professional ownership of a deployed platform serving multiple client organizations. This case study describes the architecture and engineering responsibilities; employer source code and operational records are not included.",
-    boundaries: "The release pipeline includes a manual ECS step. Offline synchronization and resource locking address separate coordination problems.",
-    next: "Apply this experience in dependable application infrastructure to an interdisciplinary research team."
+    outcome: "In daily use by multiple client organizations. Employer source code is private, so this page covers architecture and my responsibilities."
   },
   {
-    id: "orbit", number: "02", name: "ORBIT", path: "/work/orbit",
-    kind: "Behavioral data", status: "Working mobile app · exploratory clustering",
-    summary: "Longitudinal logging of mood, activities, diet, exercise, and medication, with exploratory clustering over current and recent observations.",
-    stack: ["Mobile application", "Longitudinal data", "State vectors", "Clustering"],
-    question: "How can structured personal observations make patterns in mood and daily activity easier to explore?",
-    contribution: "I built a functioning mobile application for collecting observations over time and began integrating a clustering algorithm to explore relationships between logged states and activities.",
+    id: "memory", number: "02", name: "Associative memory harness", path: "/work/memory-harness",
+    kind: "Cognitive-inspired memory", status: "Working Python prototype",
+    summary: "A memory-retrieval system for conversational AI, loosely modeled on associative memory: semantic similarity, reinforcement of memories recalled together, recursive expansion through a weighted memory graph, and an emotional association channel.",
+    stack: ["Python", "NumPy", "sentence-transformers", "Weighted graphs", "LLM integration"],
+    question: "Can an AI system recall not only what is similar to the present, but what has been recalled together before, the way associations strengthen in human memory?",
+    contribution: "I designed and built the harness: embedding-based retrieval, a weighted memory graph whose links strengthen when memories are retrieved together, bounded recursive expansion, and a separate emoji-association graph used as an emotional signal. An optional command-line adapter supplies retrieved context to a chat model.",
     implementation: [
-      "Logging for mood, activities, food, exercise, and medication over time.",
-      "State vectors representing current observations and the recent past.",
-      "Clustering over those vectors as an exploratory step toward identifying patterns in the recorded data."
+      "Cosine-similarity ranking over sentence-transformer embeddings, with an injectable encoder for deterministic testing.",
+      "A weighted memory graph in which links between co-retrieved memories are reinforced similarly to Hebbian learning, and persisted between sessions.",
+      "Recursive traversal outward from semantic matches, bounded by depth, visited memories, and a content budget.",
+      "A separate emoji-association graph that adds an emotional retrieval channel alongside recent context.",
+      "An offline demonstration and regression tests using fixed embeddings and a simulated model API."
     ],
-    flow: ["Daily observations", "Current + recent state", "Clustering", "Pattern exploration"],
-    evidence: "The mobile logging application works, and clustering is implemented. The recommendation stage remains unfinished.",
-    boundaries: "Clusters do not establish that a food, activity, or medication caused a change in mood. Predictive usefulness and recommendations require separate evaluation.",
-    next: "Document the feature representation and clustering method, inspect synthetic examples, and evaluate temporal behavior before developing recommendations."
+    flow: ["Query", "Semantic matches", "Graph expansion", "Emotional + recent context", "Reinforce co-retrieved links"],
+    outcome: "The architecture is implemented and tested. Retrieval quality has not yet been evaluated against a baseline.",
+    next: "Build a held-out evaluation set and compare semantic-only retrieval with the graph and emotional channels enabled.",
+    repo: "https://github.com/jpnoe/memory-harness"
   },
   {
-    id: "memory", number: "03", name: "AI memory harness", path: "/work/memory-harness",
-    kind: "Associative retrieval", status: "Implemented experimental harness",
-    summary: "Semantic matches, reinforced co-retrieval links, recursive graph exploration, and emoji-based emotional associations in one memory-retrieval system.",
-    stack: ["Semantic retrieval", "Weighted graphs", "Recursive retrieval", "Emotional associations"],
-    question: "How can retrieval use both similarity and the history of which memories have been retrieved together?",
-    contribution: "I built a harness that retrieves semantically relevant memories, explores related memories recursively, and strengthens links between items retrieved together. A separate emoji-based graph contributes an emotional association signal.",
+    id: "orbit", number: "03", name: "ORBIT", path: "/work/orbit",
+    kind: "Behavioral modeling", status: "Working Android app · experimental state-space analysis",
+    summary: "An Android app for longitudinal logging of mood, sleep, activity, diet, and medication that encodes observations as state vectors and groups similar states to explore behavioral patterns.",
+    stack: ["Kotlin", "Jetpack Compose", "Room + SQLCipher", "Coroutines / WorkManager", "Health Connect"],
+    question: "How can structured self-observations be represented as a state space so that patterns in mood and behavior become visible over time?",
+    contribution: "I built the application end to end: logging, encrypted local storage, reminders, trend views, and an experimental pipeline that encodes observations into a state space and groups similar states.",
     implementation: [
-      "Semantic matching to identify candidate memories.",
-      "Strengthened links between memories retrieved together, with recursive exploration of potentially relevant items.",
-      "A separate graph of emoji-based associations, balancing emotional and semantic similarity with recency and retrieval-derived groups."
+      "Logging for mood, journal entries, activities, meals with barcode lookup, exercise, sleep, and medication.",
+      "An encrypted local database (Room with SQLCipher, keys protected by Android Keystore) and optional Health Connect biometric inputs.",
+      "A ten-axis state encoder that normalizes observations and tracks which inputs are present, so missing data is not treated as neutral.",
+      "A custom approximate nearest-neighbor index (HNSW-style) over a rolling 90-day window, with density-based grouping and weekly recompaction.",
+      "Synthetic data generation and unit tests for the grouping and suggestion logic."
     ],
-    flow: ["Retrieval query", "Semantic candidates", "Linked memory exploration", "Combined retrieval signals"],
-    evidence: "An implemented retrieval architecture. Its mechanisms can be demonstrated independently of claims about retrieval quality or biological memory.",
-    boundaries: "Co-retrieval reinforcement can amplify existing associations. Improved relevance, robustness, and emotional interpretation are evaluation questions, not established outcomes.",
-    next: "Create a synthetic evaluation set and compare semantic-only retrieval with graph and emotional-association channels enabled."
+    flow: ["Daily logs + Health Connect", "State encoder", "Neighbor index", "Density-based groups", "Pattern exploration"],
+    outcome: "Logging and the analysis pipeline work. Suggestions are covered by tests but are not yet a user-facing feature, and groupings show association, not causation.",
+    next: "Evaluate the temporal encoding on synthetic and real data before building user-facing suggestions.",
+    repo: "https://github.com/jpnoe/orbit"
   },
   {
     id: "whorl", number: "04", name: "WHORL", path: "/work/whorl",
-    kind: "Physical interface", status: "Working hardware and software prototype",
-    summary: "A magnet-equipped fidget spinner becomes a musical controller, turning Hall-sensor pulses into continuous synthesizer modulation.",
+    kind: "Physical computing", status: "Working hardware and software prototype",
+    summary: "A magnet-equipped fidget spinner turned into a musical controller: Hall-sensor pulses become real-time synthesizer modulation.",
     stack: ["Arduino GIGA R1", "C++", "Python", "Serial", "MIDI"],
     question: "How can a small physical gesture become a responsive, expressive musical control?",
-    contribution: "I integrated an Arduino GIGA R1, Hall sensor, and magnet-equipped spinner with a serial-to-MIDI bridge and Logic / Alchemy.",
+    contribution: "I integrated an Arduino GIGA R1, a Hall sensor, and a magnet-equipped spinner with a Python serial-to-MIDI bridge that drives a synthesizer in Logic.",
     implementation: [
-      "C++ firmware tracks pulses, estimates RPM, smooths values, and detects stopping.",
-      "A serial protocol carries controller values and RPM to a Python bridge.",
-      "The bridge sends MIDI through CoreMIDI / IAC to control synthesizer modulation.",
-      "A documented protocol and automated parser tests support the software integration."
+      "C++ firmware counts debounced sensor pulses, estimates RPM over a full revolution, smooths the signal, and detects stopping.",
+      "A documented serial protocol carries values to a Python bridge that sends MIDI control changes.",
+      "Python tests for the bridge, plus host-side C++ tests that run the actual firmware against simulated input."
     ],
-    flow: ["Spinner + magnets", "Hall sensor", "C++ pulse processing", "Python → MIDI", "Synth modulation"],
-    evidence: "The physical controller works with Logic / Alchemy, connecting sensor acquisition, signal conditioning, protocol design, and musical interaction.",
-    boundaries: "Developed collaboratively with AI tools. Sensor behavior and musical response are prototype observations; formal latency and accuracy characterization remain future work.",
-    next: "Document calibration, stopping behavior, and an end-to-end demonstration alongside the firmware and bridge source."
+    flow: ["Spinner + magnets", "Hall sensor", "C++ signal processing", "Python → MIDI", "Synth modulation"],
+    outcome: "Works end to end with Logic / Alchemy. Latency and accuracy have not been formally measured.",
+    next: "Record a demonstration video and characterize response across spin speeds.",
+    repo: "https://github.com/jpnoe/whorl"
   }
 ];

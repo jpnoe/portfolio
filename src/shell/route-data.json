@@ -1,9 +1,8 @@
 [
   { "id": "home", "path": "/", "label": "Home", "documentTitle": "Jacob Noe — Software Engineer" },
   { "id": "work", "path": "/work", "label": "Work", "documentTitle": "Selected work — Jacob Noe" },
-  { "id": "hero", "path": "/work/hero", "label": "Hero Services", "documentTitle": "Production engineering — Jacob Noe" },
+  { "id": "hero", "path": "/work/hero", "label": "Hero Services", "documentTitle": "Hero Services — Jacob Noe" },
+  { "id": "memory", "path": "/work/memory-harness", "label": "Memory harness", "documentTitle": "Associative memory harness — Jacob Noe" },
   { "id": "orbit", "path": "/work/orbit", "label": "ORBIT", "documentTitle": "ORBIT — Jacob Noe" },
-  { "id": "memory", "path": "/work/memory-harness", "label": "Memory harness", "documentTitle": "AI memory harness — Jacob Noe" },
-  { "id": "whorl", "path": "/work/whorl", "label": "WHORL", "documentTitle": "WHORL — Jacob Noe" },
-  { "id": "manifold", "path": "/work/manifold", "label": "Manifold", "documentTitle": "Manifold — Jacob Noe" }
+  { "id": "whorl", "path": "/work/whorl", "label": "WHORL", "documentTitle": "WHORL — Jacob Noe" }
 ]

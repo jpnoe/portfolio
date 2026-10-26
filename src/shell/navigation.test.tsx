@@ -33,10 +33,11 @@ test("case study links navigate and browser history restores the prior page", ()
   act(() => orbit?.click());
   expect(host.querySelector("h1")?.textContent).toBe("ORBIT");
   expect(document.title).toBe("ORBIT — Jacob Noe");
-  expect(host.textContent).toContain("recommendation stage remains unfinished");
+  expect(host.textContent).toContain("groupings show association, not causation");
+  expect(host.querySelector<HTMLAnchorElement>('a[href="https://github.com/jpnoe/orbit"]')).not.toBeNull();
   act(() => {
     window.history.replaceState(null, "", "/work");
     window.dispatchEvent(new PopStateEvent("popstate"));
   });
-  expect(host.querySelector("h1")?.textContent).toBe("Built across boundaries.");
+  expect(host.querySelector("h1")?.textContent).toBe("Projects.");
 });
