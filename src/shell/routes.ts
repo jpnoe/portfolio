@@ -1,10 +1,10 @@
 import routeData from "./route-data.json";
 
-export type RouteId = "home" | "work" | "hero" | "orbit" | "memory" | "whorl";
+export type RouteId = "home" | "work" | "practice" | "hero" | "orbit" | "memory" | "whorl";
 export interface Route { id: RouteId; path: string; label: string; documentTitle: string; }
 export const routes = routeData as readonly Route[];
 export type AppRoute = Route;
-const navIds: readonly RouteId[] = ["work"];
+const navIds: readonly RouteId[] = ["work", "practice"];
 export const navRoutes = routes.filter((route) => navIds.includes(route.id));
 
 export function normalizePath(pathname: string): string {
