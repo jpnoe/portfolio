@@ -8,7 +8,7 @@ export function HomePage() {
         <p className="index">Software engineer</p>
         <h1 id="page-title" tabIndex={-1}>Jacob Noe<span className="name-period">.</span></h1>
         <p className="hero-statement">Dependable software.<br /><em>Thoughtful design.</em></p>
-        <p className="hero-description">I build reliable web and mobile platforms, and in my own projects I explore how memory, mood, and behavior can be represented in software.</p>
+        <p className="hero-description">I build reliable web and mobile platforms for production use-cases. In my own projects I explore how memory, mood, and behavior can be represented in software.</p>
         <div className="hero-actions"><SiteLink to="/work" className="button-primary">Explore my work <span aria-hidden="true">↗</span></SiteLink><a href={sitePath("/resume.pdf")} className="text-link">Résumé · PDF</a></div>
       </div>
       <aside className="hero-aside" aria-label="Experience and direction">

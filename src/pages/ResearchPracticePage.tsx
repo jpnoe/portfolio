@@ -6,25 +6,24 @@ export function ResearchPracticePage() {
       <PageHeader
         index="Research practice"
         title="AI-augmented development."
-        description="My independent projects use sustained integration with AI systems to formalize ideas and implement explicit mechanisms."
       />
 
       <section className="question-section">
-        <p className="eyebrow">AI-augmented workflow</p>
+        <p className="eyebrow">Human-AI Collaboration</p>
         <p>
-          I utilize Large Language Models (LLMs) and repository-aware agents across problem formulation, architecture, implementation, and review. 
-          Extended interaction with these systems helps translate abstract intuition into explicit engineering constraints; 
-          those decisions are then scoped into direct implementation work.
-        </p>
-      </section>
-
-      <section className="question-section">
-        <p className="eyebrow">Multi-model approach</p>
-        <p>
-            Different models excel at different stages of the research pipeline. 
-            ChatGPT excels at architectural planning and formalization. 
-            Cursor's agents effectively translate those scoped decisions into rapid codebase iteration. 
-            Gemini is effective for theoretical brainstorming and as a targeted debugger. 
+          My independent projects are developed through sustained collaboration with multiple AI systems across problem formulation, architecture, implementation, and critical review. Different participants contribute differently: 
+          <br/>
+          <ul>
+            <li>
+            ChatGPT supports formalization and architectural reasoning.
+            </li>
+            <li>
+            Cursor’s repository-aware agents translate scoped decisions into codebase changes and verification.
+            </li>
+            <li>
+            Gemini contributes targeted debugging and language review. I integrate and inspect the resulting work, test published claims, and document material contributions at the project level.
+            </li>
+          </ul>
         </p>
       </section>
     </article>
