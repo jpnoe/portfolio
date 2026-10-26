@@ -47,7 +47,7 @@ function ShellFrame() {
         </main>
         <footer className="colophon">
           <div><p>Jacob Noe</p><p>Software engineer · research and production systems</p></div>
-          <div className="footer-links"><a href="https://github.com/jpnoe">GitHub ↗</a><a href="mailto:jake.p.noe.99@gmail.com">Email ↗</a></div>
+          <div className="footer-links"><a href="https://github.com/jpnoe">GitHub ↗</a><a href="mailto:lyla.noe.99@gmail.com">Email ↗</a></div>
         </footer>
       </div>
     </>

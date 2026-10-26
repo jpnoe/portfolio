@@ -23,6 +23,6 @@ export function ProjectPage({ id }: { id: string }) {
       <section><p className="eyebrow">Status</p><p>{project.outcome}</p></section>
       {project.next && <section><p className="eyebrow">Next project</p><p>{project.next}</p></section>}
     </div>
-    <div className="case-end"><SiteLink to="/work" className="text-link">Explore another project</SiteLink><a className="text-link" href={`mailto:jake.p.noe.99@gmail.com?subject=${encodeURIComponent(`Portfolio: ${project.name}`)}`}>Discuss this work ↗</a></div>
+    <div className="case-end"><SiteLink to="/work" className="text-link">Explore another project</SiteLink><a className="text-link" href={`mailto:lyla.noe.99@gmail.com?subject=${encodeURIComponent(`Portfolio: ${project.name}`)}`}>Discuss this work ↗</a></div>
   </article>;
 }
