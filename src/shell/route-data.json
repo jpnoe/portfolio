@@ -4,6 +4,6 @@
   { "id": "practice", "path": "/practice", "label": "Practice", "documentTitle": "Research practice — Jacob Noe" },
   { "id": "hero", "path": "/work/hero", "label": "Hero Services", "documentTitle": "Hero Services — Jacob Noe" },
   { "id": "memory", "path": "/work/memory-harness", "label": "Memory harness", "documentTitle": "Associative memory harness — Jacob Noe" },
-  { "id": "orbit", "path": "/work/orbit", "label": "ORBIT", "documentTitle": "ORBIT — Jacob Noe" },
-  { "id": "whorl", "path": "/work/whorl", "label": "WHORL", "documentTitle": "WHORL — Jacob Noe" }
+  { "id": "orbit", "path": "/work/orbit", "label": "Orbit", "documentTitle": "Orbit — Jacob Noe" },
+  { "id": "whorl", "path": "/work/whorl", "label": "Whorl", "documentTitle": "Whorl — Jacob Noe" }
 ]

@@ -31,8 +31,8 @@ test("case study links navigate and browser history restores the prior page", ()
   const orbit = host.querySelector<HTMLAnchorElement>(`a[href="${sitePath("/work/orbit")}"]`);
   expect(orbit).not.toBeNull();
   act(() => orbit?.click());
-  expect(host.querySelector("h1")?.textContent).toBe("ORBIT");
-  expect(document.title).toBe("ORBIT — Jacob Noe");
+  expect(host.querySelector("h1")?.textContent).toBe("Orbit");
+  expect(document.title).toBe("Orbit — Jacob Noe");
   expect(host.textContent).toContain("groupings show association, not causation");
   expect(host.querySelector<HTMLAnchorElement>('a[href="https://github.com/jpnoe/orbit"]')).not.toBeNull();
   act(() => {

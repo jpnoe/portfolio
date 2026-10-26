@@ -54,7 +54,7 @@ export const projects: readonly Project[] = [
     repo: "https://github.com/jpnoe/memory-harness"
   },
   {
-    id: "orbit", number: "03", name: "ORBIT", path: "/work/orbit",
+    id: "orbit", number: "03", name: "Orbit", path: "/work/orbit",
     kind: "Behavioral modeling", status: "Working Android app · experimental state-space analysis",
     summary: "An Android app for longitudinal logging of mood, sleep, activity, diet, and medication that encodes observations as state vectors and groups similar states to explore behavioral patterns.",
     stack: ["Kotlin", "Jetpack Compose", "Room + SQLCipher", "Coroutines / WorkManager", "Health Connect"],
@@ -73,7 +73,7 @@ export const projects: readonly Project[] = [
     repo: "https://github.com/jpnoe/orbit"
   },
   {
-    id: "whorl", number: "04", name: "WHORL", path: "/work/whorl",
+    id: "whorl", number: "04", name: "Whorl", path: "/work/whorl",
     kind: "Physical computing", status: "Working hardware and software prototype",
     summary: "A magnet-equipped fidget spinner turned into a musical controller: Hall-sensor pulses become real-time synthesizer modulation.",
     stack: ["Arduino GIGA R1", "C++", "Python", "Serial", "MIDI"],

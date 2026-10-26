@@ -2,15 +2,15 @@ import { PageHeader } from "../shell/PageHeader";
 
 export function ResearchPracticePage() {
   return (
-    <article className="page case-page">
+    <article className="page">
       <PageHeader
         index="Research practice"
-        title="AI-augmented reasoning. Verifiable work."
-        description="My independent projects use sustained integration with AI systems to formalize ideas, implement explicit mechanisms, and test whether the evidence supports the claim."
+        title="AI-augmented development."
+        description="My independent projects use sustained integration with AI systems to formalize ideas and implement explicit mechanisms."
       />
 
-      <section className="case-section">
-        <p className="eyebrow">Collaborative workflow</p>
+      <section className="question-section">
+        <p className="eyebrow">AI-augmented workflow</p>
         <p>
           I utilize Large Language Models (LLMs) and repository-aware agents across problem formulation, architecture, implementation, and review. 
           Extended interaction with these systems helps translate abstract intuition into explicit engineering constraints; 
@@ -19,21 +19,12 @@ export function ResearchPracticePage() {
       </section>
 
       <section className="question-section">
-        <p className="eyebrow">Current flow</p>
+        <p className="eyebrow">Multi-model approach</p>
         <p>
-          Different models excel at different stages of the research pipeline. 
-          I use ChatGPT for architectural formalization and theoretical sounding-boarding. 
-          Cursor's agents translate those scoped decisions into rapid codebase iteration. 
-          Gemini serves as an interactive logic reviewer and targeted debugger. 
-        </p>
-      </section>
-
-      <section>
-        <p className="eyebrow">Methodological Transparecy</p>
-        <p>
-          In computational research, documenting the tools used to generate architecture or code is as critical as documenting the data pipeline. 
-          I explicitly record where AI-assisted generation is utilized to ensure full transparency.
-          While these systems heavily accelerate the implementation phase, the accountability for source review, testing, and scientific rigor remains entirely mine.
+            Different models excel at different stages of the research pipeline. 
+            ChatGPT excels at architectural planning and formalization. 
+            Cursor's agents effectively translate those scoped decisions into rapid codebase iteration. 
+            Gemini is effective for theoretical brainstorming and as a targeted debugger. 
         </p>
       </section>
     </article>

@@ -42,4 +42,4 @@ All targets output to `dist`. The GitHub workflow runs tests and builds on pull 
 - `src/content/projects.ts`: case study content.
 - `src/pages/ResearchPracticePage.tsx`: collaborative research, verification, and attribution practice.
 - `src/shell/route-data.json`: routes shared by navigation and static page generation.
-- `public/resume.docx`: résumé.
+- `public/resume.pdf`: résumé.
