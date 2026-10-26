@@ -43,9 +43,9 @@ export const projects: readonly Project[] = [
     contribution: "I designed and built the harness: embedding-based retrieval, a weighted memory graph whose links strengthen when memories are retrieved together, bounded recursive expansion, and a separate emoji-association graph used as an emotional signal. An optional command-line adapter supplies retrieved context to a chat model.",
     implementation: [
       "Cosine-similarity ranking over sentence-transformer embeddings, with an injectable encoder for deterministic testing.",
-      "A weighted memory graph in which links between co-retrieved memories are reinforced similarly to Hebbian learning, and persisted between sessions.",
+      "A weighted memory graph in which links between co-retrieved memories are reinforced using a mechanism inspired by Hebbian association, and persisted between sessions.",
       "Recursive traversal outward from semantic matches, bounded by depth, visited memories, and a content budget.",
-      "A separate emoji-association graph that adds an emotional retrieval channel alongside recent context.",
+      "A separate emoji-association graph that adds an experimental emoji-association channel alongside recent context.",
       "An offline demonstration and regression tests using fixed embeddings and a simulated model API."
     ],
     flow: ["Query", "Semantic matches", "Graph expansion", "Emotional + recent context", "Reinforce co-retrieved links"],
